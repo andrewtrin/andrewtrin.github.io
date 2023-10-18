@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Gabarito';
+    src: url('gabarito-variablefont.woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(roboto-regular.woff);
+}
+
+body {
+    font-family: Gabarito;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #285050;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    font-family: Roboto;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
