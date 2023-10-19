@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Gabarito';
-    src: url('gabarito-variablefont.woff');
+    src: url(fonts/gabarito-variablefont.woff);
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url(roboto-regular.woff);
+    src: url(fonts/roboto-regular.woff);
 }
 
 body {
@@ -16,10 +16,15 @@ body {
 }
 
 header {
-    background-color: #285050;
+    background-color: #444444;
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+.header {
+    display: inline-block;
+    padding: 5px;
 }
 
 header h1 {
@@ -35,13 +40,33 @@ main {
     font-family: Roboto;
     max-width: 800px;
     margin: 20px auto;
-    background-color: #fff;
+    color: rgb(59, 59, 59);
+    background-color: #dadada;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.contact {
+    display: inline-block;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.job {
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.date {
+    text-align: right;
+    padding: 5px;
+    padding-right: 10px;
+}
+
 h2 {
+    border-bottom: 1px solid black;
     font-size: 24px;
     margin-top: 20px;
 }
@@ -54,4 +79,8 @@ p {
 ul {
     list-style: disc;
     padding-left: 20px;
+}
+
+footer {
+    text-align: center;
 }
