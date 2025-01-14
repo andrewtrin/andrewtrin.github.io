@@ -10,16 +10,26 @@
 
 body {
     font-family: Gabarito;
-    background-color: #f0f0f0;
+    background-color: #3f3f3f;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #444444;
+    background-color: #6e0f0f;
     color: #e4e4e4;
     text-align: center;
     padding: 20px;
+}
+
+.headblock {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: #6e0f0f;
+    background-color: #e4e4e4;
+    padding: 5px;
+    padding-left: 10px;
 }
 
 .header {
@@ -47,7 +57,7 @@ main {
     color: rgb(59, 59, 59);
     background-color: #dadada;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -60,7 +70,7 @@ main {
 .job {
     border: 2px solid black;
     border-radius: 15px;
-    background-color: #444444;
+    background-color: #6e0f0f;
     color: #e4e4e4;
     padding: 5px;
     padding-left: 10px;
@@ -70,6 +80,11 @@ main {
     text-align: right;
     padding: 5px;
     padding-right: 10px;
+}
+
+.skills {
+    display: flex;
+    text-align: center;
 }
 
 h2 {
