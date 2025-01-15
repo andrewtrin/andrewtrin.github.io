@@ -10,13 +10,13 @@
 
 body {
     font-family: Gabarito;
-    background-color: #3f3f3f;
+    background-color: #eaf4f4;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #415A77;
+    background-color: #6b9080;
     color: #e4e4e4;
     text-align: center;
     padding: 20px;
@@ -26,8 +26,8 @@ header {
     display: inline-block;
     border: 2px solid black;
     border-radius: 15px;
-    color: #415A77;
-    background-color: #e4e4e4;
+    color: #2c3642;
+    background-color: #eaf4f4;
     padding: 5px;
     padding-left: 10px;
 }
@@ -52,12 +52,13 @@ header p {
 
 main {
     display: flex;
+    flex-direction: row;
     gap: 20px;
     font-family: Roboto;
     max-width: 800px;
     margin: 20px auto;
-    color: #0D1B2A;
-    background-color: #E0E1DD;
+    color: #2c3642;
+    background-color: #a4c3b2;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -65,6 +66,7 @@ main {
 
 .left-section, .right-section {
     width: 50%;
+    flex: 1;
 }
 
 .clearfix::after {
@@ -82,8 +84,8 @@ main {
 .job, .project-title {
     border: 2px solid black;
     border-radius: 15px;
-    background-color: #415A77;
-    color: #e4e4e4;
+    background-color: #cce3de;
+    color: #2c3642;
     padding: 5px;
     padding-left: 10px;
 }
@@ -128,4 +130,18 @@ footer {
     text-align: center;
     padding: 30px;
     clear: both;
+}
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .left-section, .right-section {
+        width: 100%;
+    }
+    .skills {
+        flex-direction: column;
+    }
+    .language {
+        grid-template-columns: 1fr;
+    }
 }
