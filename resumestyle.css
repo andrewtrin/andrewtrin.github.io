@@ -55,7 +55,7 @@ main {
     flex-direction: row;
     gap: 20px;
     font-family: Roboto;
-    max-width: 800px;
+    max-width: 80%;
     margin: 20px auto;
     color: #2c3642;
     background-color: #a4c3b2;
@@ -76,6 +76,7 @@ main {
 }
 
 .contact {
+    font-size: small;
     display: inline-block;
     padding: 5px;
     vertical-align: middle;
@@ -90,10 +91,32 @@ main {
     padding-left: 10px;
 }
 
+.project-description {
+    padding: 5px;
+}
+
+.job-description {
+    padding: 10px;
+}
+
+.degree {
+    font-style: italic;
+}
+
+.university {
+    font-weight: bold;
+}
+
+.graduation {
+    font-size: small;
+}
+
 .date {
     text-align: right;
     padding: 5px;
     padding-right: 10px;
+    font-size: small;
+    font-style: italic;
 }
 
 .skills {
@@ -127,6 +150,7 @@ ul .language {
 }
 
 footer {
+    font-size: xx-small;
     text-align: center;
     padding: 30px;
     clear: both;
