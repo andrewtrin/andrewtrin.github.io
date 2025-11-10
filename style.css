@@ -1,0 +1,271 @@
+/* ===== 1. Setup & Variables ===== */
+@font-face {
+    font-family: 'Gabarito';
+    src: url(fonts/gabarito-variablefont.woff);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/roboto-regular.woff);
+}
+
+:root {
+    --font-header: 'Gabarito', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --color-primary: #007bff;
+    --color-dark: #2c3642;
+    --color-light: #ffffff;
+    --color-text: #333333;
+    --color-text-secondary: #666666;
+    --color-bg: #f4f7f6;
+    --color-border: #e0e0e0;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --border-radius: 8px;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-header);
+    color: var(--color-dark);
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 8px;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-dark);
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* ===== 2. Header ===== */
+.top-header {
+    background-color: var(--color-light);
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+}
+
+.top-header h1 {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.top-header p {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+/* ===== 3. Main Layout & Cards ===== */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr; /* Sidebar | Main Content */
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--color-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem; /* For mobile stacking */
+}
+
+/* ===== 4. Sidebar Elements ===== */
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.contact-list .icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+.skill-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-pills li {
+    background-color: #eef7ff;
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+}
+
+.cert-list li {
+    margin-bottom: 0.75rem;
+}
+.cert-list span {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    display: block;
+}
+
+/* ===== 5. Main Content Elements ===== */
+.job-item, .project-item {
+    margin-bottom: 2rem;
+}
+.job-item:last-child, .project-item:last-child {
+    margin-bottom: 0;
+}
+
+.job-header, .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.job-header h3 { margin-bottom: 0; }
+.project-header h3 { margin-bottom: 0; }
+.project-header h3 a:hover { text-decoration: underline; }
+
+.job-date {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--color-text-secondary);
+}
+
+.job-company {
+    font-weight: 500;
+    color: var(--color-dark);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.job-item ul, .project-item ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 0.5rem;
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+}
+.project-tags span {
+    background-color: var(--color-bg);
+    color: var(--color-text-secondary);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+}
+
+
+/* ===== 6. JavaScript Animations ===== */
+.card {
+    /* Initial state for animation */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.card.visible {
+    /* Final state */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ===== 7. Responsive Design ===== */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack columns */
+    }
+    .sidebar {
+        /* Re-order sidebar to top on mobile */
+        grid-row: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .top-header {
+        padding: 1rem;
+    }
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card {
+        padding: 1.5rem;
+    }
+    .job-header, .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+}
+
+/* ===== 8. Project Images ===== */
+.project-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-images img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+}
