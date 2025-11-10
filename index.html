@@ -3,204 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resumestyle.css">
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
     <title>Portfolio - C. Andrew Trin</title>
 </head>
 <body>
-    <header>
-        <div class="headblock">
-        <div class="header">
-            <img src="profile-photo.jpg" id="profile-photo" alt="headshot of C. Andrew Trin" height="58px">
-        </div>
-        <div class="header">
-            <h1>C. Andrew Trin</h1>
-            <p>Software Engineering Student</p>
-        </div>
+
+    <header class="top-header">
+        <div class="header-content">
+            <img src="profile-photo.jpg" alt="Headshot of C. Andrew Trin" class="profile-photo">
+            <div>
+                <h1>C. Andrew Trin</h1>
+                <p>Software Engineering Student</p>
+            </div>
         </div>
     </header>
-    <main>
 
-        <div class="left-section">
+    <main class="container">
 
-            <h2>Languages and Technologies</h2>
-            <ul>
-                <div class="language">
+        <aside class="sidebar">
+
+            <section class="card" id="contact">
+                <h2>Contact</h2>
+                <ul class="contact-list">
+                    <li>
+                        <img src="icons/email.png" alt="Email" class="icon">
+                        <a href="mailto:c.andrewtrin@gmail.com">c.andrewtrin@gmail.com</a>
+                    </li>
+                    <li>
+                        <img src="icons/call.png" alt="Phone" class="icon">
+                        <span>(209) 405-4264</span>
+                    </li>
+                    <li>
+                        <img src="icons/user.png" alt="LinkedIn" class="icon">
+                        <a href="https://www.linkedin.com/in/candrewtrin" target="_blank">linkedin.com/in/candrewtrin</a>
+                    </li>
+                    </ul>
+            </section>
+
+            <section class="card" id="skills">
+                <h2>Languages & Technologies</h2>
+                <ul class="skill-pills">
                     <li>Java</li>
                     <li>Python</li>
                     <li>JavaScript</li>
-                </div>
-                <div class="language">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>MySQL</li>
-                </div>
-                <div class="language">
                     <li>Spring Boot</li>
                     <li>Angular</li>
                     <li>Git</li>
-                </div>
-            </ul>
-    
-            <h2>Certifications</h2>
-            <ul>
-                <li>Amazon Web Services (AWS) Certified Cloud Practitioner - Oct 2023</li>
-                <li>PeopleCert ITIL Foundation - Mar 2024</li>
-                <li>CompTIA Project+ - Nov 2024</li>
-            </ul>
-    
-            <h2>Contact</h2>
-            <p>
-                <div class="contact"><img src="icons/email.png" height="20px"></div>
-                <div class="contact"><a href="mailto: c.andrewtrin@gmail.com">c.andrewtrin@gmail.com</a></div>
-            </p>
-            <p>
-                <div class="contact"><img src="icons/call.png" height="20px"></div>
-                <div class="contact"><a href="tel:209-405-4264">(209) 405-4264</a></div>
-            </p>
-            <p>
-                <div class="contact"><img src="icons/user.png" height="20px"></div>
-                <div class="contact"><a href="https://www.linkedin.com/in/candrewtrin" target="_blank">linkedin.com/in/candrewtrin</a></div>
-            </p>
+                </ul>
+            </section>
 
-            <h2>Education</h2>
-            <div class="education-item">
-                <p>
-                    <br>
-                    <div class="degree">Bachelor of Science, Software Engineering</div>
-                    <div class="university">Western Governors University</div>
-                    <div class="graduation">Graduation Year: 2025</div><br>
-                </p>
-            </div>
-            <div class="education-item">
-                <p>
-                    <div class="degree">Certificate of Completion, Automotive Technology</div>
-                    <div class="university">Universal Technical Institute</div>
-                    <div class="graduation">Graduation Year: 2013</div>
-                    <br>
-                </p>
-            </div>
+            <section class="card" id="certifications">
+                <h2>Certifications</h2>
+                <ul class="cert-list">
+                    <li>AWS Certified Cloud Practitioner <span>(Oct 2023)</span></li>
+                    <li>PeopleCert ITIL Foundation <span>(Mar 2024)</span></li>
+                    <li>CompTIA Project+ <span>(Nov 2024)</span></li>
+                </ul>
+            </section>
+            
+            <section class="card" id="education">
+                <h2>Education</h2>
+                <ul class="cert-list"> <li>
+                        <b>Bachelor of Science, Software Engineering</b>
+                        <span>Western Governors University (2025)</span>
+                    </li>
+                    <li>
+                        <b>Certificate of Completion, Automotive Technology</b>
+                        <span>Universal Technical Institute (2013)</span>
+                    </li>
+                </ul>
+            </section>
+        </aside>
 
-            <h2>Professional Experience</h2>
-            <p>
-                <div class ="job">
-                    <b>R&D Engineering Technician</b><br>
-                    <i>Charge Robotics</i>
-                </div>
-                <div class="date">June 2025 - Present</div>
-            </p>
-                <div class="job-description">
+        <div class="main-content">
+
+            <section class="card" id="about">
+                <h2>About Me</h2>
+                <p>
+                    Aspiring Software Engineer currently pursuing a degree at WGU, with a passion for building the future of autonomous systems.
+                    My experience at Tesla and in the field of humanoid robotics has given me a unique perspective on the interplay between hardware
+                    and software. Eager to leverage my skills to contribute to impactful projects in robotics and artificial intelligence. Let's connect!
+                </p>
+            </section>
+
+            <section class="card" id="experience">
+                <h2>Professional Experience</h2>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <h3>R&D Engineering Technician</h3>
+                        <span class="job-date">June 2025 - Present</span>
+                    </div>
+                    <p class="job-company">Charge Robotics</p>
                     <ul>
                         <li>Accelerating renewable energy through automated solar construction.</li>
                     </ul>
-            <p>
-                <div class="job">
-                    <b>Engineering Technician - Optimus Engineering</b><br>
-                    <i>Tesla, Inc.</i><br>
                 </div>
-                <div class="date">November 2024 - June 2025</div>
-            </p>
-                <div class="job-description">
+                
+                <div class="job-item">
+                    <div class="job-header">
+                        <h3>Engineering Technician - Optimus Engineering</h3>
+                        <span class="job-date">November 2024 - June 2025</span>
+                    </div>
+                    <p class="job-company">Tesla, Inc.</p>
                     <ul>
-                        <li>Supported humanoid robotics development by collaborating with 
-                            engineering to maintain a fleet of robots and deploy innovative mechanical updates.</li>
-                        <li>Utilized command-line interface (CLI) tools to configure, control, and update
-                            software on humanoid robots.</li> 
+                        <li>Supported humanoid robotics development by collaborating with engineering to maintain a fleet of robots and deploy innovative mechanical updates.</li>
+                        <li>Utilized command-line interface (CLI) tools to configure, control, and update software on humanoid robots.</li>
                     </ul>
                 </div>
-                <div class="job">
-                    <b>EOL Technician 3/Y</b><br>
-                    <i>Tesla, Inc.</i><br>
-                </div>
-                <div class="date">July 2019 - October 2024</div>
-            </p>
-                <div class="job-description">
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <h3>EOL Technician 3/Y</h3>
+                        <span class="job-date">July 2019 - October 2024</span>
+                    </div>
+                    <p class="job-company">Tesla, Inc.</p>
                     <ul>
                         <li>Conducted repairs and quality checks to ensure new vehicle production met strict quality standards and aligned with customer expectations.</li>
                         <li>Spearheaded a training project on low voltage electrical diagnostics, improving team efficiency and accuracy.</li>
                         <li>Supported the heavy forensics team with high voltage diagnostics, repairs, and root cause analysis to ensure vehicle quality and safety.</li>
                     </ul>
                 </div>
-            <p>
-                <div class="job">
-                    <b>Express Technician</b><br>
-                    <i>Toyota Town of Stockton</i><br>
-                </div>
-                <div class="date">March 2016 - July 2019</div>
-            </p>
-                <div class="job-description">
+                
+                <div class="job-item">
+                    <div class="job-header">
+                        <h3>Express Technician</h3>
+                        <span class="job-date">March 2016 - July 2019</span>
+                    </div>
+                    <p class="job-company">Toyota Town of Stockton</p>
                     <ul>
                         <li>Performed preventative maintenance, light repairs (brakes, alignments), and managed warranty work for Toyota dealership customers.</li>
                     </ul>
                 </div>
-            <p>
-                <div class="job">
-                    <b>Express Technician</b><br>
-                    <i>Tracy Honda</i><br>
-                </div>
-                <div class="date">September 2013 - March 2016</div>
-            </p>
-                <div class="job-description">
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <h3>Express Technician</h3>
+                        <span class="job-date">September 2013 - March 2016</span>
+                    </div>
+                    <p class="job-company">Tracy Honda</p>
                     <ul>
                         <li>Performed preventive maintenance and minor repairs to ensure customer satisfaction.</li>
                     </ul>
                 </div>
+            </section>
 
-                <h2>Summary</h2>
-                <p>
-                    Aspiring Software Engineer currently pursuing a degree at WGU, with a passion for building the future of autonomous systems.  
-                    My experience at Tesla and in the field of humanoid robotics has given me a unique perspective on the interplay between hardware 
-                    and software. Eager to leverage my skills to contribute to impactful projects in robotics and artificial intelligence. Let's connect!
-                </p>
-                
+            <section class="card" id="projects">
+                <h2>Projects</h2>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/andrewtrin/world-map" target="_blank">JavaScript - Interactive Web Map</a></h3>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Angular</span>
+                        </div>
+                    </div>
+                    <p>
+                        This project is an interactive world map visualization created for the
+                        D280 course at Western Governors University. It demonstrates my skills
+                        in JavaScript, HTML, CSS, and Angular.
+                    </p>
+                    <div class="project-images">
+                        <img src="images/javascript-1.png" alt="World map project screenshot">
+                        <img src="images/javascript-2.png" alt="World map project second screenshot">
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/andrewtrin/parts-inventory" target="_blank">Java - Parts Inventory Web App</a></h3>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Spring Boot</span>
+                        </div>
+                    </div>
+                    <p>
+                        This project is a customized parts/products catalog developed for the
+                        D287 course at Western Governors University. It demonstrates skills in
+                        Java, HTML, CSS, and Spring Boot.
+                    </p>
+                    <div class="project-images">
+                        <img src="images/parts-1.png" alt="Parts inventory project screenshot">
+                        <img src="images/parts-2.png" alt="Parts inventory project second screenshot">
+                    </div>
+                </div>
+
+            </section>
         </div>
-
-    <div class="clearfix"></div>
-
-    <div class="right-section">
-
-        <h2>Projects</h2>
-            <div class="project">
-                <div class="project-title">
-                    <b>JavaScript - Interactive Web Map</b><br>
-                </div>
-                <div class="project-description">
-                    <p>This project is an interactive world map visualization created for the 
-                        D280 course at Western Governors University. It demonstrates my skills 
-                        in JavaScript, HTML, CSS, and Angular.<br>
-                        <br>
-                        <a href="https://github.com/andrewtrin/world-map">GitHub Repository Link.</a>
-                    </p>
-                </div>
-                <div class="project-images">
-                    <img src="images/javascript-1.png" width="100%">
-                    <img src="images/javascript-2.png" width="100%">
-                </div>
-            </div>
-            <br>
-            <div class="project">
-                <div class="project-title">
-                    <b>Java - Parts Inventory Web App</b><br>
-                </div>
-                <div class="project-description">
-                    <p>This project is a customized parts/products catalog developed for the 
-                        D287 course at Western Governors University. It demonstrates skills in 
-                        Java, HTML, CSS, and Spring Boot.<br>
-                        <br>
-                        <a href="https://github.com/andrewtrin/parts-inventory">GitHub Repository Link.</a>
-                    </p>
-                </div>
-                <div class="project-images">
-                    <img src="images/parts-1.png" width="100%">
-                    <img src="images/parts-2.png" width="100%">
-                </div>
-            </div>
-    </div>
-
-    <div class="clearfix"></div>
-
     </main>
+
     <footer>
-        <a href="https://www.flaticon.com/free-icons/telephone" title="telephone icons">Telephone icons created by Uniconlabs - Flaticon</a>
+        <p>&copy; 2025 C. Andrew Trin</p>
     </footer>
+
+    <script src="app.js"></script>
+    
 </body>
 </html>
