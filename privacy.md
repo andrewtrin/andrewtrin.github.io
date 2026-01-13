@@ -1,3 +1,17 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font-family: Helvetica, Arial, sans-serif; padding: 20px; max-width: 800px; margin: 0 auto; line-height: 1.6; }
+  h1 { color: #333; }
+  h2 { color: #555; margin-top: 20px; }
+</style>
+</head>
+<body>
 **Privacy Policy**
 
 This privacy policy applies to the Long Story Short app (hereby referred to as "Application") for mobile devices that was created by Chantrin Labs (hereby referred to as "Service Provider") as an Ad Supported service. This service is intended for use "AS IS".
@@ -73,3 +87,5 @@ By using the Application, you are consenting to the processing of your informati
 **Contact Us**
 
 If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at contact@chantrin.com.
+</body>
+</html>
